@@ -136,3 +136,22 @@ document.getElementById("myButton2").onclick = function () {
 
   document.getElementById("cLabel").innerHTML = " Side C: " + c;
 };
+
+//* counter program
+
+let count = 0;
+
+document.getElementById("decreaseButton").onclick = function () {
+  count = count - 1;
+  document.getElementById("countLabel").innerHTML = count;
+}
+
+document.getElementById("increaseButton").onclick = function () {
+  count = count + 1;
+  document.getElementById("countLabel").innerHTML = count;
+}
+
+document.getElementById("resetButton").onclick = function () {
+  count = 0;
+  document.getElementById("countLabel").innerHTML = count;
+}
